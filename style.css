@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     margin: 0;
     padding-top: 70px;
@@ -10,8 +11,7 @@ body {
 
 }
 
-
-
+/* Off-screen menu styles */
 .off-screen-menu {
     background-color: rgb(34,37,49);
     height: 100vh;
@@ -29,11 +29,13 @@ body {
     transition: .3s ease;
 }
 
+/* Active state for the off-screen menu */
 .off-screen-menu.active {
     left: 0;
     color: white;
 }
 
+/*nav for the hamburger menu*/
 nav {
     position: fixed;
     top: 0;
@@ -42,6 +44,7 @@ nav {
     z-index: 20;
 }
 
+/* Hamburger menu container */
 .ham-menu {
     height: 50px;
     width: 50px;
@@ -49,6 +52,7 @@ nav {
     position: relative;
 }
 
+/* Hamburger menu lines */
 .ham-menu span {
     height: 5px;
     width: 100%;
@@ -69,6 +73,7 @@ nav {
     top: 75%;
 }
 
+/* Hamburger cross animation when active */
 .ham-menu.active span:nth-child(1) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
@@ -83,16 +88,19 @@ nav {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+/*About Us heading*/
 .about {
     text-align: center;
     color: black;
 }
 
+/*Contact heading*/
 .contact {
     text-align: center;
     color: black;
 }
 
+/*About us description in about.html*/
 .description {
     display: flex;
     justify-content: center;
@@ -110,6 +118,7 @@ nav {
     color: lightgray;
 }
 
+/* Copyright info footer*/
 footer {
     text-align: right;
     padding: 20px;
@@ -117,11 +126,7 @@ footer {
     font-size: 14px;
 }
 
-header {
-    color:white;
-    background-color: black;
-}
-
+/* Header Styles */
 header {
     position: relative;
     top: -70px;
@@ -132,8 +137,11 @@ header {
     align-items: center;
     justify-content: center;
     z-index: 10;
+    color:white;
+    background-color: black;
 }
 
+/*Parent container for hike card*/
 .hike-wrapper {
     min-height: calc(100vh - 100px);
     display: flex;
@@ -143,6 +151,7 @@ header {
     box-sizing: border-box;
 }
 
+/* Hike Card Styles */
 .hike-card {
   width: 320px;
   border-radius: 12px;
@@ -152,17 +161,19 @@ header {
   transition: transform 0.2s ease;
 }
 
+/*Hike Card Hover Effect*/
 .hike-card:hover {
   transform: translateY(-5px);
 }
 
-/* Image */
+/* Image  on the hike card*/
 .hike-image {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
+/* Trail Image on trailOfTenFalls.html */
 .trail-image {
   display: block;
   width: min(80vw, 560px);
@@ -198,6 +209,7 @@ header {
   color: #333333;
 }
 
+/*Description on the index.html hike card*/
 .hike-desc {
   font-size: 14px;
   color: #666666;
@@ -228,16 +240,15 @@ header {
   font-weight: bold;
 }
 
-.hike-btn:hover {
-  background-color: #1b5e20;
-}
 
+/* Hike Title Inside trailOfTenFalls.html*/
 .hike-title {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
 
+/*Hike description inside trailOfTenFalls.html*/
 .about-hike {
     max-width: 1000px;
     margin: 0 auto;
