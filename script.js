@@ -7,9 +7,3 @@ hamMenu.addEventListener('click', ()=> {
     offScreenMenu.classList.toggle('active');
 });
 
-const hikeBtn = document.querySelector('.hike-btn');
-
-hikeBtn.addEventListener('click', () => {
-    // Redirect to the target HTML file
-    window.location.href = 'trailOfTenFalls.html'; 
-});
